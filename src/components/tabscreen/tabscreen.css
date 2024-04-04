@@ -11,6 +11,7 @@
    text-transform: none;
    color:rgba(0, 0, 0, 0.356);
    font-weight: 600;
+   font-size: 16px;
    width:50%;
 }
 .MuiBox-root  .tab_button.Mui-selected {
@@ -21,3 +22,9 @@
    background-color: black;
   }
 
+
+ .MuiBox-root .overview_tab{
+  padding:0;
+  padding-top:24px;
+
+  }

@@ -25,7 +25,7 @@ const TabsScreen = () => {
               <Tab label="Other" value="2" disableRipple className="tab_button" />
             </TabList>
           </Box>
-          <TabPanel value="1">
+          <TabPanel value="1" className="overview_tab">
             <OverviewTab />
           </TabPanel>
           <TabPanel value="2">
