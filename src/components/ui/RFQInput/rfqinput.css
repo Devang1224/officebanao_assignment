@@ -1,0 +1,21 @@
+.rfq-label{
+    padding:20px 0 10px 0;
+    font-weight: 600;
+    font-size:14px;
+}
+
+.rfq-input{
+    width:100%;
+    padding:16px 10px 16px 10px;
+    border-radius:10px;
+    border-color:rgba(0, 0, 0, 0.164);
+    font-size:16px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.371);
+    cursor:pointer;
+    user-select: none;
+}
+.rfq-input::placeholder{
+    color:rgba(0, 0, 0, 0.371);
+
+}

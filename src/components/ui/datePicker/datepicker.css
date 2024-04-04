@@ -1,0 +1,24 @@
+.date_label{
+    padding:20px 0 10px 0;
+    font-weight: 600;
+    font-size:14px;
+}
+
+.date_input{
+    width:100%;
+    padding:16px 10px 16px 10px;
+    border-radius:10px;
+    border-color:rgba(0, 0, 0, 0.164);
+    font-size:16px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.371);
+    cursor:pointer;
+    user-select: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+

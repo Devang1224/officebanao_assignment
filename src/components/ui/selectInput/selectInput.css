@@ -1,0 +1,40 @@
+.MuiFormControl-root .MuiOutlinedInput-notchedOutline{
+   outline:none;
+   border-color:rgba(0, 0, 0, 0.164);
+   border-width: 2px;
+   outline:none;
+   border-radius: 10px;
+  }
+
+  .MuiInputBase-root{
+    padding-right:10px;
+  }
+
+  .select_input_default{
+    font-size:16px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.371);
+  }
+
+  .input_label{
+    padding:10px 0 10px 0;
+    font-weight: 600;
+    font-size:14px;
+  }
+
+/* 
+.select_input{
+  width:100%;
+  outline:none;
+  border-color:rgba(0, 0, 0, 0.164);
+  border-width: 2px;
+  padding:10px;
+  border-radius: 10px;
+  font-size:16px;
+  font-weight: 600;
+  color:rgba(0, 0, 0, 0.371)
+
+}
+.select_input_default{
+color:rgba(0, 0, 0, 0.237);
+} */

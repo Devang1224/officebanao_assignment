@@ -8,7 +8,6 @@ const Header = () => {
 
   function toggleDrawer() {
     setOpenDrawer(true);
-    console.log("event triggered");
   }
 
   return (
