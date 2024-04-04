@@ -1,0 +1,30 @@
+.MuiDrawer-root .MuiBackdrop-root{
+    background-color: rgba(0, 0, 0, 0.287);
+}
+
+.MuiDrawer-root .MuiPaper-root{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    
+}
+
+ .drawer_container{
+   padding:20px;
+   width:30vw;
+}
+
+.drawer_container .drawer_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.drawer_header .drawer_close_button{
+    font-size: 30px;
+    opacity: 0.5;
+    cursor: pointer;
+    border:none;
+    background-color: white;
+}

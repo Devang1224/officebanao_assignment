@@ -1,0 +1,23 @@
+.tabscreen_container{
+ padding: 1rem;
+}
+
+
+.MuiBox-root  .css-1gsv261{
+    width:40%
+}
+
+.MuiBox-root .tab_button{
+   text-transform: none;
+   color:rgba(0, 0, 0, 0.356);
+   font-weight: 600;
+   width:50%;
+}
+.MuiBox-root  .tab_button.Mui-selected {
+    color:black;
+  }
+
+.MuiBox-root .MuiTabs-indicator{
+   background-color: black;
+  }
+
