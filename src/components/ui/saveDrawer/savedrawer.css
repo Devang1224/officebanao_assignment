@@ -12,11 +12,15 @@
    padding:20px;
    width:30vw;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ 
 }
 
+.drawer .drawer_form{
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 
 
 

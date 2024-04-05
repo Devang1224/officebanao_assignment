@@ -5,11 +5,11 @@ import Select from "@mui/material/Select";
 import { IoIosArrowDown } from "react-icons/io";
 import "./selectInput.css";
 
-export default function SelectInput() {
-  const [clientName, setClientName] = React.useState("");
+export default function SelectInput({setWorkOrderInfo,workOrderInfo}) {
+
 
   const handleChange = (event) => {
-    setClientName(event.target.value);
+     setWorkOrderInfo((prev)=>({...prev,clientName:event.target.value}));
   };
 
   return (
@@ -17,7 +17,7 @@ export default function SelectInput() {
       <p className="input_label">Client </p>
       <FormControl sx={{ width: "100%" }}>
         <Select
-          value={clientName}
+          value={workOrderInfo.clientName}
           onChange={handleChange}
           displayEmpty
           inputProps={{ "aria-label": "Client" }}
@@ -27,6 +27,7 @@ export default function SelectInput() {
             />
           )}
           className="select_input"
+          required
         >
           <MenuItem value="" disabled>
             <p className="select_input_default">Client Name</p>

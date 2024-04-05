@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const OtherTab = () => {
-  return (
-    <div>OtherTab</div>
-  )
-}
+  return <div>Hello World!</div>;
+};
 
-export default OtherTab
+export default OtherTab;
