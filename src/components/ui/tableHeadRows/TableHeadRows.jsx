@@ -3,20 +3,40 @@ import "./tableheadrows.css";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 import ActivityRow from "../activityRow/ActivityRow";
+import { useWorkorder } from "../../../context/WorkOrder";
+import { tableData } from "../../../dummydata";
 
 const TableHeadRows = ({ data }) => {
   const [isParentCollapse, setIsParentCollapse] = React.useState(false);
+  const {setWorkOrder,workOrder} = useWorkorder();
 
   const handleRowCollapse = () => {
     setIsParentCollapse((prev) => !prev);
   };
+
+const handleCheckBoxChange = (e)=>{
+
+  const state = e.target.checked;
+  const id = data.id;
+
+    if(state){
+       const data = tableData.find((item)=>item.id===id);
+       setWorkOrder(prevWorkOrder => ([...prevWorkOrder, data]));
+    }
+    else{
+      const newData = workOrder.filter(item => item.id!==id);
+      setWorkOrder([...newData])
+    }
+
+}
+
 
   return (
     <ul className="civil_row" style={isParentCollapse ? { borderBottom: 'none' }:{}}>
       <li className="table_row">
         <div className="packages_col">
           <div className="input_checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" onChange={handleCheckBoxChange}/>
           </div>
           <p style={{ color: "black" }}>{data.name}</p>
         </div>

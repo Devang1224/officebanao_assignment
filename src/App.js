@@ -7,6 +7,7 @@ import Header from './components/ui/header/Header';
 function App() {
   return (
     <div className='container'>
+      
       <Header/>
       <TabsScreen/>
        

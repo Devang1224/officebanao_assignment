@@ -6,6 +6,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import SelectInput from "../selectInput/SelectInput";
 import DatePicker from "../datePicker/DatePicker";
 import RfqInput from "../RFQInput/RfqInput";
+import { useWorkorder } from "../../../context/WorkOrder";
 
 export default function SaveDrawer({ openDrawer, setOpenDrawer }) {
   const [workOrderInfo, setWorkOrderInfo] = React.useState({
@@ -14,12 +15,16 @@ export default function SaveDrawer({ openDrawer, setOpenDrawer }) {
     dateCompletion: "",
     rfqCode: "",
   });
+  const {printWorkOrder} = useWorkorder();
 
   const toggleDrawer = (newOpen) => () => {
     setOpenDrawer(newOpen);
   };
 
-  const handleOnSave = () => {
+  const handleOnSave = (e) => { 
+    e.preventDefault();
+
+    printWorkOrder();
     setOpenDrawer(false);
   };
 
