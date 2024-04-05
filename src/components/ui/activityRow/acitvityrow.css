@@ -1,44 +1,16 @@
-.activity_row_container .packages_col{
-    display: flex;
-    align-items: center;
-    gap:2rem;
-    padding-left:16px;
-    color:rgba(0, 0, 0, 0.696);
-    font-weight: 500;
-    border-left:1px solid rgba(128, 128, 128, 0.214);
+
+
+.activity_row .table_row{
+/* border-top:none;
+border-bottom:none; */
+border:1px solid red
 }
 
-.row_container td{
-    text-align: left;
-    padding:10px 0px 10px 0px;
-    color:rgba(0, 0, 0, 0.797);
-    font-size: 18px;
-    height: 47px;
-    border:1px solid  rgba(128, 128, 128, 0.214);
-    border-left:none;
-    border-right:none;
-    border-top:none;
+.activity_row .activity_col{
+    font-weight: 400;
+    padding-left:60px;
 }
 
-
-
-.row_container .total_col{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10px;
-    border-right:1px solid rgba(128, 128, 128, 0.214);
-
-
-}
-.total_col button{
-    border:none;
-    background-color: white;
-    cursor: pointer;
-
-}
- .total_col .total_icon{
-    font-size: 24px;
-    color: #5FD1D0;
-
+.activity_icon{
+    color:#000 !important;
 }

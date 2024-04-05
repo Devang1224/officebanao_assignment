@@ -1,35 +1,12 @@
-.row_container .packages_col{
+
+
+.civil_row{
     display: flex;
-    align-items: center;
-    gap:2rem;
-    padding-left:16px;
-    color:black;
-    font-weight: 600;
-    /* border-left:1px solid rgba(128, 128, 128, 0.214); */
+    flex-direction: column;
+    border:1px solid rgba(0, 0, 0, 0.16);
+    border-top:none;
 }
 
-.row_container td{
-    text-align: left;
-    padding:10px 0px 10px 0px;
-    color:rgba(0, 0, 0, 0.797);
-    font-size: 18px;
-    height: 47px;
-    /* border:1px solid  rgba(128, 128, 128, 0.214); */
-    /* border-left:none;
-    border-right:none;
-    border-top:none; */
-}
-
-
-.row_container .total_col{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10px;
-    /* border-right:1px solid rgba(128, 128, 128, 0.214); */
-
-
-}
 .total_col button{
     border:none;
     background-color: white;
@@ -42,5 +19,3 @@
 
 }
 
-.tablehead_tbody{
-}

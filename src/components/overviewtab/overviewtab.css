@@ -1,34 +1,38 @@
 .overview_container{
     width:100%;
 }
-
+li{
+   list-style-type: none;
+}
 .overview_container .table{
     width: 100%;
-    border-spacing:0;
 }
-
-.overview_container .table colgroup col:nth-child(1){
+.table .packages_col{
      width:47%;
 }
-.overview_container .table colgroup col:nth-child(2){
+.table .rate_col{
     width:30%;
 }
 
-.overview_container .table thead{
-    background-color: #DDEAFA;
-
-}
 
 
-.overview_container thead th{
-    font-weight: 600;
+ .table_row{
+    display: flex;
     text-align: left;
     padding:10px 0px 10px 0px;
     color:rgba(0, 0, 0, 0.676);
     font-size: 18px;
+  
+}
+
+.table_header{
+    background-color: #DDEAFA;
+    border:none;
+    font-weight: 600;
 
 }
-.overview_container thead th span{
+
+.table .rate_col span{
  font-size: 14px;
  font-style: italic;
   padding-left: 5px;
@@ -36,11 +40,12 @@
 }
 
 
-.overview_container .head_packages{
+.overview_container .packages_col{
   display: flex;
   align-items: center;
   gap:2rem;
   padding-left:16px;
+  font-weight: 600;
 }
 
 .input_checkbox input{
@@ -50,10 +55,11 @@ cursor: pointer;
 
 }
 
-.input_checkbox {
-}
 
-.overview_container .head_packages p{
-    font-weight: 600;
-    
+
+.total_col{
+display: flex;
+flex-grow: 1;
+justify-content: space-between;
+padding-right:10px;
 }

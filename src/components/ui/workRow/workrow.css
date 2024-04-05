@@ -1,0 +1,10 @@
+
+
+.work_row .table_row{
+   border:1px solid black
+    }
+    
+    .work_row .work_col{
+        font-weight: 400;
+        padding-left:100px;
+    }
