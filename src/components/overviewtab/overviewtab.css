@@ -1,11 +1,16 @@
 .overview_container{
     width:100%;
+    overflow-x: auto;
 }
 li{
    list-style-type: none;
 }
 .overview_container .table{
     width: 100%;
+   min-width: 763px;
+   display: flex;
+   flex-direction: column;
+   /* gap:10px; */
 }
 .table .packages_col{
      width:47%;
@@ -14,7 +19,11 @@ li{
     width:30%;
 }
 
+.table .table_contents{
+   border:1px solid rgba(0, 0, 0, 0.16);
+   border-top:none;
 
+}
 
  .table_row{
     display: flex;
@@ -29,7 +38,6 @@ li{
     background-color: #DDEAFA;
     border:none;
     font-weight: 600;
-
 }
 
 .table .rate_col span{

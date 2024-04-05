@@ -3,8 +3,6 @@
 .civil_row{
     display: flex;
     flex-direction: column;
-    border:1px solid rgba(0, 0, 0, 0.16);
-    border-top:none;
 }
 
 .total_col button{
@@ -19,3 +17,6 @@
 
 }
 
+.table_row .activity_content{
+    
+}

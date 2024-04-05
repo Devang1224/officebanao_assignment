@@ -32,7 +32,7 @@ const handleCheckBoxChange = (e)=>{
 
 
   return (
-    <ul className="civil_row" style={isParentCollapse ? { borderBottom: 'none' }:{}}>
+    <ul className="civil_row" style={isParentCollapse ? { borderBottom: 'none' }:{borderBottom:"1px solid rgba(0, 0, 0, 0.16)"}}>
       <li className="table_row">
         <div className="packages_col">
           <div className="input_checkbox">
@@ -54,8 +54,11 @@ const handleCheckBoxChange = (e)=>{
           </button>
         </div>
       </li>
+      <li className="activity_content">
       {isParentCollapse &&
-        data.activity.map((item) => <ActivityRow key={item.id} data={item} />)}
+        data.activity.map((item) => <ActivityRow key={item.id} data={item} />)
+       }
+      </li>
     </ul>
   );
 };

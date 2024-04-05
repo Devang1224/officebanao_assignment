@@ -42,8 +42,8 @@ const ActivityRow = ({ data }) => {
   }
   
   return (
-    <ul className="activity_row">
-      <li className="table_row">
+    <ul>
+      <li className="table_row activity_row">
         <div className="packages_col activity_col">
           <div className="input_checkbox">
             <input type="checkbox" onChange={handleCheckBoxChange} checked={isChecked() ?? false}/>
@@ -64,7 +64,9 @@ const ActivityRow = ({ data }) => {
           </button>
         </div>
       </li>
+      <div className="work_content">
       {isActivityOpen && data.workItems.map((item) => <WorkRow key={item.id} data={item}/>)}
+      </div>
     </ul>
   );
 };

@@ -38,9 +38,11 @@ const OverviewTab = () => {
             <p>Total</p>
           </div>
         </li>
+        <li className="table_contents">
         {tableData.map((item) => (
           <TableHeadRows key={item.id} data={item} />
         ))}
+        </li>
       </ul>
     </div>
   );

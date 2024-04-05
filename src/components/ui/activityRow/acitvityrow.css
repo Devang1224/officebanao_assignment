@@ -1,15 +1,42 @@
 
 
-.activity_row .table_row{
+.activity_row {
+  position: relative;
+}
+
+.activity_row::before{
+  content:"";
+  width:20px;
+  height:20px;
+  border:1px solid rgba(0, 0, 0, 0.16);
+  border-right:none;
   border-top:none;
-  border-bottom:none;
+  position: absolute;
+  left:20px;
+  top:5px;
+
 }
 
 .activity_row .activity_col{
     font-weight: 400;
     padding-left:60px;
+
 }
+
 
 .activity_icon{
     color:#000 !important;
+}
+
+.work_content{
+position: relative;
+}
+.work_content::before{
+  content: "";
+  width:1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.16);
+  position: absolute;
+  left:20px;
+  top:5px;
 }

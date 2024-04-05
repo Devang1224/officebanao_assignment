@@ -40,12 +40,3 @@ export default function SelectInput({setWorkOrderInfo,workOrderInfo}) {
     </>
   );
 }
-
-// <select className="select_input" value="">
-//       <option value="" disabled className="select_input_default">
-//         Client Name
-//       </option>
-//       <option value="A">A</option>
-//       <option value="B">B</option>
-//       <option value="C">C</option>
-//     </select>
